@@ -1,0 +1,14 @@
+
+<resources>
+    <string-array name="items">String</string-array>
+
+    <string-array name="ourItems">
+
+        <item id = "@+id/home">Home</item>
+        <item id = "@+id/location">Location</item>
+        <item id = "@+id/about_App">About app</item>
+        <item id = "@+id/profile">Profile</item>
+
+    </string-array>
+
+</resources>

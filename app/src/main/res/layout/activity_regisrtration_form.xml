@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="800dp"
+    android:background="#60AACC"
+    android:backgroundTint="#60AACC"
+    tools:context=".RegisrtrationForm">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="309dp"
+        android:layout_height="450dp"
+        android:layout_marginTop="150dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginStart="60dp">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="154dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#5F0968"
+            android:text="Registration Form"
+            android:textColor="#0E0D0D"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/UserName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="#970FA1"
+            android:ems="10"
+            android:hint="UserName"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textColor="#0E0D0D" />
+
+        <EditText
+            android:id="@+id/UserNAme2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="150dp"
+            android:backgroundTint="#B83A12"
+            android:ems="10"
+            android:hint="SecondName"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textColor="#0E0D0D" />
+
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="200dp"
+            android:backgroundTint="#B83A12"
+            android:ems="10"
+            android:hint="phone number"
+            android:inputType="phone"
+            android:textColor="#0E0D0D" />
+
+        <EditText
+            android:id="@+id/NewPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="250dp"
+            android:backgroundTint="#B83A12"
+            android:ems="10"
+            android:hint=" New Password"
+            android:inputType="textPassword"
+            android:textColor="#0E0D0D" />
+
+        <EditText
+            android:id="@+id/ConfirmPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="300dp"
+            android:backgroundTint="#B83A12"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textColor="#0E0D0D" />
+
+        <Button
+            android:id="@+id/onclick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="350dp"
+            android:background="#FF5722"
+            android:backgroundTint="#C38AC0"
+            android:onClick="RegisterNow"
+            android:text="REGISTER" />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
