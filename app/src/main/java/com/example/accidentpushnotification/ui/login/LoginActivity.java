@@ -144,10 +144,15 @@ public class LoginActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Going to Registration Form", Toast.LENGTH_LONG).show();
+//                Toast.makeText(getApplicationContext(), "Going to Registration Form", Toast.LENGTH_LONG).show();
                 loadingProgressBar.setVisibility(View.VISIBLE);
                 loginViewModel.login(usernameEditText.getText().toString(),
                         passwordEditText.getText().toString());
+
+                //redirect to home page
+                Intent i = new Intent(Intent.ACTION_MAIN);
+                i.setClassName("com.example.accidentpushnotification","com.example.accidentpushnotification.Home");
+                startActivity(i);
             }
         });
     }

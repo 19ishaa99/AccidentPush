@@ -21,7 +21,7 @@ public class Home extends AppCompatActivity implements AdapterView.OnItemClickLi
 
     public void onCall(View view){
         startActivity(new Intent(android.content.Intent.ACTION_DIAL,
-                Uri.parse("tel:+0659-268-446")));
+                Uri.parse("tel:+0659-268-446"))); //this should be fetched during app installation and store in the app local Db
     }
 
 
@@ -30,6 +30,12 @@ public class Home extends AppCompatActivity implements AdapterView.OnItemClickLi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+
+//        AppBarConfiguration appBarConfiguration =
+//                new AppBarConfiguration.Builder(navController.getGraph()).build();
+
+
         ListView listview = (ListView) findViewById(R.id.Drawer);
         My_list = getResources().getStringArray(R.array.ourItems);
         ArrayAdapter leftAdapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1, My_list);
