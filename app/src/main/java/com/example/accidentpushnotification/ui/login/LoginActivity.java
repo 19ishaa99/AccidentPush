@@ -151,7 +151,8 @@ public class LoginActivity extends AppCompatActivity {
 
                 //redirect to home page
                 Intent i = new Intent(Intent.ACTION_MAIN);
-                i.setClassName("com.example.accidentpushnotification","com.example.accidentpushnotification.Home");
+//                i.setClassName("com.example.accidentpushnotification","com.example.accidentpushnotification.Home");
+                i.setClassName("com.example.accidentpushnotification","com.example.accidentpushnotification.DashboardActivity");
                 startActivity(i);
             }
         });
